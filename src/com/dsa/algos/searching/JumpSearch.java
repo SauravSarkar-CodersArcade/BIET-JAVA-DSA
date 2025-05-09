@@ -6,7 +6,7 @@ public class JumpSearch {
         int prev = 0;
         // Jump in blocks until we find a block where
         // we find x
-        while (arr[Math.min(step,n)]-1 < x){
+        while (arr[Math.min(step,n)-1] < x){
             prev = step;
             step += (int) Math.floor(Math.sqrt(n));
             if(prev >= n){
@@ -31,6 +31,6 @@ public class JumpSearch {
         int[] arr =
                 {0,1,1,2,3,5,8,13,21,34,55,89,144,233,
                 377,610};
-        System.out.println(jumpSearch(arr,55));
+        System.out.println(jumpSearch(arr,233));
     }
 }
