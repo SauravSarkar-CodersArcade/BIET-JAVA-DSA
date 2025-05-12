@@ -1,4 +1,4 @@
-package com.dsa.collections;
+package com.problems;
 
 public class FindWinner {
     int solve(int n, int k){
